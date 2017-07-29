@@ -1,2 +1,2 @@
 # AmiiboLookup
-A website with description of amiibo bonus per game.
+A website that lists amiibo functionality by game.
