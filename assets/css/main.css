@@ -2712,7 +2712,7 @@
 				.tiles article > a h2 {
 					margin: 0;
 				}
-
+                
 				.tiles article > a .content {
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2725,10 +2725,36 @@
 					opacity: 0;
 				}
 
-					.tiles article > a .content > :last-child {
-						margin-bottom: 0;
-					}
+                /* Remove image caption upon hover */
+                .style1:hover .pic_text {
+                    opacity: 0.0;
+                }
 
+                .style2:hover .pic_text {
+                    opacity: 0.0;
+                }
+
+                .style3:hover .pic_text {
+                    opacity: 0.0;
+                }
+
+                .style4:hover .pic_text {
+                    opacity: 0.0;
+                }
+
+                .style5:hover .pic_text {
+                    opacity: 0.0;
+                }
+
+                .style6:hover .pic_text {
+                    opacity: 0.0;
+                }
+                /*end */
+
+            .tiles article > a .content > :last-child {
+				margin-bottom: 0;
+            }
+            
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
 			}
@@ -2752,7 +2778,7 @@
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
 			}
-
+       
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
@@ -2760,14 +2786,15 @@
 				transform: scale(1.1);
 			}
 
-				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #333333;
-					opacity: 0.35;
-				}
+            body:not(.is-touch) .tiles article:hover > .image:before {
+				background-color: #333333;
+				opacity: 0.35;
+            }
 
-				body:not(.is-touch) .tiles article:hover > .image:after {
-					opacity: 0;
-				}
+            body:not(.is-touch) .tiles article:hover > .image:after {
+				opacity: 0;
+            }
+        
 
 			body:not(.is-touch) .tiles article:hover .content {
 				max-height: 15em;
